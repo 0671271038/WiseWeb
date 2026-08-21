@@ -1,43 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>WiseWeb - Websites That Work Wiser</title>
-  <title>Be Smart.Grow Business. With Us</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>WiseWeb — Be Smart. Grow Business. With Us.</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>body{font-family:'Poppins',sans-serif}.glass{backdrop-filter:blur(12px);background:rgba(255,255,255,0.9)}</style>
+<style>
+  body{font-family:'Inter',sans-serif}
+  h1,h2,h3,.display{font-family:'Plus Jakarta Sans',sans-serif}
+ .hero-glow{ background: radial-gradient(600px circle at 0% 0%, #0D4CFF15, transparent 80%), radial-gradient(800px circle at 100% 0%, #7C3AED15, transparent 80%)}
+ .card-hover{transition:all.35s cubic-bezier(.4,0,.2,1)}
+ .card-hover:hover{transform:translateY(-6px); box-shadow:0 20px 40px -12px rgba(10,10,92,0.15)}
+</style>
 </head>
-<body class="bg-[#F7F8FF]">
-<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur border-b"><div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center"><div class="font-extrabold text-xl"><span class="text-[#0A0A5C]">Wise</span><span class="text-[#0D4CFF]">Web</span></div><a href="#quote" class="bg-[#0A0A5C] text-white px-6 py-2.5 rounded-full text-sm font-bold">Get Quote</a></div></nav>
+<body class="bg-[#FBFBFF] text-[#0A0A5C] antialiased">
 
-<section class="pt-32 pb-16 px-6"><div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
-<div><span class="bg-blue-100 text-[#0D4CFF] text-xs font-bold px-3 py-1.5 rounded-full">BASED IN INANDA, KZN</span><h1 class="text-5xl font-extrabold mt-6">Websites that Work Wiser.</h1><p class="mt-6 text-lg text-slate-600">I build fast websites that bring customers. Check my work below.</p>
-<div class="mt-8 flex flex-wrap gap-3">
-<a href="https://wa.me/27671271038?text=Hi%20WiseWeb,%20I%20need%20a%20website" class="bg-[#0D4CFF] text-white px-8 py-4 rounded-full font-bold">WhatsApp 0671271038</a>
-<a href="mailto:sthepoisn@gmail.com?subject=Free%20Website%20Quote%20Request%20-%20WiseWeb&body=Hi%20WiseWeb,%0A%0AI%20need%20a%20website%20for%20my%20business:%0A%0ABusiness%20Name:%0AWhat%20I%20do:%0AMy%20budget:%0A%0AThanks!" class="bg-white border border-slate-200 text-[#0A0A5C] px-8 py-4 rounded-full font-bold">Email Quote</a>
-<a href="#work" class="bg-white border px-8 py-4 rounded-full font-bold">See My Work</a>
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-slate-100">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <div class="w-8 h-8 rounded-full bg-[#0A0A5C] text-white grid place-items-center font-extrabold text-sm">W</div>
+      <div class="font-extrabold text-[20px] tracking-tight display">Wise<span class="text-[#0D4CFF]">Web</span></div>
+    </div>
+    <a href="#quote" class="bg-[#0A0A5C] hover:bg-black text-white px-6 py-2.5 rounded-full text-[13px] font-bold transition">Get Free Quote →</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="pt-32 pb-20 px-6 hero-glow">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+  <div>
+    <div class="inline-flex items-center gap-2 bg-white border border-slate-200 px-3 py-1.5 rounded-full text-[11px] font-bold tracking-widest text-slate-600">
+      <span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> AVAILABLE IN INANDA • PHOENIX • DURBAN
+    </div>
+    <h1 class="display text-[52px] leading-[0.95] font-extrabold mt-6 tracking-tight">
+      Be Smart.<br>
+      <span class="text-[#0D4CFF]">Grow Business.</span><br>
+      With Us.
+    </h1>
+    <p class="mt-5 text-[18px] leading-7 text-slate-500 max-w-[48ch]">I craft ultra-fast, premium websites that turn clicks into customers. Built for KZN businesses that want to look expensive.</p>
+
+    <div class="mt-8 flex flex-wrap gap-3">
+      <a href="https://wa.me/27671271038?text=Hi%20WiseWeb,%20I%20need%20a%20website%0A%0ABusiness%20Name:%20%0AWhat%20I%20do:%20%0ABudget:%20" class="bg-[#0A0A5C] text-white px-7 py-4 rounded-full font-bold text-sm shadow-[0_8px_20px_-8px_#0A0A5C] hover:bg-black transition flex items-center gap-2">
+        WhatsApp 067 127 1038
+      </a>
+      <a href="mailto:sthepoisn@gmail.com?subject=Free%20Website%20Quote%20Request&body=Hi%20WiseWeb,%0A%0AI%20need%20a%20website%20for%20my%20business:%0A%0ABusiness%20Name:%0AWhat%20I%20do:%0ABudget:%0A" class="bg-white border border-slate-200 text-[#0A0A5C] px-7 py-4 rounded-full font-bold text-sm hover:border-slate-300 transition">Email Quote</a>
+    </div>
+
+    <div class="mt-8 flex items-center gap-6 text-[13px]">
+      <div class="flex -space-x-2"><div class="w-8 h-8 rounded-full bg-slate-200 border-2 border-white"></div><div class="w-8 h-8 rounded-full bg-[#0D4CFF] border-2 border-white"></div><div class="w-8 h-8 rounded-full bg-[#0A0A5C] border-2 border-white"></div></div>
+      <div class="text-slate-500"><b class="text-[#0A0A5C]">12+ businesses</b> trust WiseWeb in KZN</div>
+    </div>
+  </div>
+
+  <div class="relative">
+    <div class="absolute -inset-4 bg-gradient-to-br from-[#0D4CFF]/20 to-[#7C3AED]/20 rounded-[2.5rem] blur-2xl"></div>
+    <div class="relative bg-white rounded-[2rem] p-3 shadow-[0_30px_80px_-20px_rgba(10,10,92,0.25)] border border-white">
+      <img src="Fade.jpg" class="rounded-[1.4rem] w-full object-cover aspect-[4/3]">
+      <div class="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur rounded-2xl p-4 border shadow-xl flex justify-between items-center">
+        <div><p class="text-xs font-bold tracking-widest text-slate-400">LIVE PROJECT</p><p class="font-bold">The Fade Factory — 98/100 Speed</p></div>
+        <div class="w-10 h-10 bg-[#0A0A5C] text-white rounded-full grid place-items-center">↗</div>
+      </div>
+    </div>
+  </div>
 </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="py-24 px-6 bg-white">
+<div class="max-w-6xl mx-auto">
+  <div class="flex justify-between items-end">
+    <h2 class="display text-4xl font-extrabold tracking-tight">Selected Work</h2>
+    <p class="text-sm text-slate-400 hidden md:block">Real sites. Real results. Click to view live.</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8 mt-12">
+    <!-- Card 1 -->
+    <div class="card-hover rounded-[2rem] border border-slate-100 overflow-hidden bg-[#FCFCFF]">
+      <div class="aspect-[4/3] overflow-hidden"><img src="Spice.jpg" class="w-full h-full object-cover"></div>
+      <div class="p-6"><div class="flex justify-between"><h3 class="font-bold">Phoenix Spice House</h3><span class="text-[10px] font-bold bg-amber-100 text-amber-700 px-2 py-1 rounded-full">RESTAURANT</span></div><p class="text-sm text-slate-500 mt-1">Menu + WhatsApp Orders</p><a href="fade-demo.html" target="_blank" class="mt-4 inline-flex text-[13px] font-bold text-[#0D4CFF]">View Live Demo →</a></div>
+    </div>
+    <!-- Card 2 - Featured -->
+    <div class="card-hover rounded-[2rem] border border-[#0A0A5C]/10 overflow-hidden bg-[#0A0A5C] text-white shadow-2xl md:-mt-4 md:mb-4">
+      <div class="aspect-[4/3] overflow-hidden"><img src="fade.jpg" class="w-full h-full object-cover"></div>
+      <div class="p-6"><div class="flex justify-between items-center"><h3 class="font-bold">The Fade Factory</h3><span class="text-[10px] font-bold bg-white/15 px-2 py-1 rounded-full">BOOKING • LIVE</span></div><p class="text-sm text-white/60 mt-1">Online Booking + R500/hr</p><a href="fade-demo.html" target="_blank" class="mt-4 inline-flex bg-white text-[#0A0A5C] px-4 py-2 rounded-full text-[13px] font-bold">View Live Work →</a></div>
+    </div>
+    <!-- Card 3 -->
+    <div class="card-hover rounded-[2rem] border border-slate-100 overflow-hidden bg-[#FCFCFF]">
+      <div class="aspect-[4/3] overflow-hidden"><img src="Build.jpg" class="w-full h-full object-cover"></div>
+      <div class="p-6"><div class="flex justify-between"><h3 class="font-bold">KZN Pro Build</h3><span class="text-[10px] font-bold bg-slate-100 text-slate-600 px-2 py-1 rounded-full">CONSTRUCTION</span></div><p class="text-sm text-slate-500 mt-1">Quote Form + Gallery</p><a href="#quote" class="mt-4 inline-flex text-[13px] font-bold text-[#0D4CFF]">Get One Like This →</a></div>
+    </div>
+  </div>
 </div>
-<div class="bg-white rounded-[2rem] p-4 shadow-2xl border"><img src="Fade.jpg" class="rounded-[1.5rem]"></div>
-</div></section>
+</section>
 
-<section id="work" class="py-20 px-6 bg-white"><div class="max-w-6xl mx-auto"><h2 class="text-4xl font-extrabold text-center">Recent Work</h2><div class="grid md:grid-cols-3 gap-8 mt-12">
-<div class="rounded-[2rem] border shadow-xl overflow-hidden"><img src="Spice.jpg"><div class="p-6"><h3 class="font-bold">Phoenix Spice House</h3><p class="text-sm text-slate-500">Restaurant + Orders</p><a href="fade-demo.html" target="_blank" class="text-[#0D4CFF] font-bold text-sm mt-3 inline-block">View Live Demo →</a></div></div>
-<div class="rounded-[2rem] border shadow-xl overflow-hidden"><img src="fade.jpg"><div class="p-6"><h3 class="font-bold">The Fade Factory</h3><p class="text-sm text-slate-500">Booking Website - LIVE NOW</p><a href="fade-demo.html" target="_blank" class="bg-[#0A0A5C] text-white px-4 py-2 rounded-full text-sm mt-3 inline-block">View Live Work→</a></div></div>
-<div class="rounded-[2rem] border shadow-xl overflow-hidden"><img src="Build.jpg"><div class="p-6"><h3 class="font-bold">KZN Pro Build</h3><p class="text-sm text-slate-500">Service + Quote Form</p><a href="#quote" class="text-[#0D4CFF] font-bold text-sm mt-3 inline-block">Get One Like This →</a></div></div>
-</div></div></section>
+<!-- QUOTE -->
+<section id="quote" class="py-24 px-6 bg-[#F6F7FF]">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-start">
+  <div>
+    <h2 class="display text-[42px] leading-[0.95] font-extrabold tracking-tight">Get your free quote.<br><span class="text-slate-400">I reply in 30 mins.</span></h2>
+    <p class="text-slate-500 mt-4 max-w-[42ch]">Free homepage mockup included. No upfront payment. You only pay when you love the design.</p>
 
-<section id="quote" class="py-20 px-6"><div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
-<div><h2 class="text-4xl font-extrabold">Get Your Free Quote</h2><p class="text-slate-500 mt-4">I reply in 30 mins. Free homepage design included.</p><div class="mt-8 bg-white p-6 rounded-2xl border"><p class="font-bold">Contact WiseWeb</p><p class="mt-2">📧 sthepoisn@gmail.com</p><p>📱 0671271038</p><a href="https://wa.me/27671271038" class="mt-4 inline-block bg-green-500 text-white px-6 py-3 rounded-full font-bold">Chat on WhatsApp</a></div></div>
-<form action="https://formsubmit.co/sthepoisn@gmail.com" method="POST" class="bg-white p-8 rounded-[2rem] border space-y-4">
-<input type="hidden" name="_subject" value="NEW WiseWeb Lead!"><input type="hidden" name="_captcha" value="false">
-<input name="name" required placeholder="Your Name" class="w-full px-5 py-4 rounded-full border bg-[#F7F8FF]">
-<input name="business" required placeholder="Business Name" class="w-full px-5 py-4 rounded-full border bg-[#F7F8FF]">
-<input name="whatsapp" required placeholder="Your WhatsApp" class="w-full px-5 py-4 rounded-full border bg-[#F7F8FF]">
-<textarea name="message" rows="4" placeholder="What website do you need?" class="w-full px-5 py-4 rounded-[1.5rem] border bg-[#F7F8FF]"></textarea>
-<button class="w-full bg-[#0D4CFF] text-white py-4 rounded-full font-bold">Send Request to WiseWeb</button>
-</form>
-</div></section>
-<footer class="py-8 text-center text-xs text-slate-400">© 2026 WiseWeb • sthepoisn@gmail.com • 0671271038</footer>
-</body></html>
+    <div class="mt-8 bg-white p-6 rounded-[1.5rem] border border-slate-100 shadow-sm">
+      <p class="font-bold display">Contact Direct</p>
+      <div class="mt-4 space-y-2 text-sm">
+        <p class="flex gap-2"><span class="text-slate-400">Email:</span> <b>sthepoisn@gmail.com</b></p>
+        <p class="flex gap-2"><span class="text-slate-400">WhatsApp:</span> <b>067 127 1038</b></p>
+      </div>
+      <div class="mt-5 flex gap-3">
+        <a href="https://wa.me/27671271038?text=Hi%20WiseWeb,%20I%20need%20a%20website" class="bg-[#25D366] text-white px-5 py-2.5 rounded-full font-bold text-sm">Chat on WhatsApp</a>
+        <a href="mailto:sthepoisn@gmail.com" class="bg-slate-900 text-white px-5 py-2.5 rounded-full font-bold text-sm">Send Email</a>
+      </div>
+    </div>
+  </div>
+
+  <form action="https://formsubmit.co/sthepoisn@gmail.com" method="POST" class="bg-white p-8 rounded-[2rem] border border-slate-100 shadow-[0_20px_60px_-30px_rgba(10,10,92,0.3)] space-y-4">
+    <input type="hidden" name="_subject" value="NEW WiseWeb Lead!"><input type="hidden" name="_captcha" value="false">
+    <div class="flex gap-3">
+      <input name="name" required placeholder="Your Name" class="w-full px-5 py-4 rounded-full border border-slate-100 bg-[#F8F8FF] focus:outline-none focus:ring-2 focus:ring-[#0D4CFF]/20 text-sm">
+      <input name="whatsapp" required placeholder="WhatsApp" class="w-full px-5 py-4 rounded-full border border-slate-100 bg-[#F8F8FF] focus:outline-none focus:ring-2 focus:ring-[#0D4CFF]/20 text-sm">
+    </div>
+    <input name="business" required placeholder="Business Name" class="w-full px-5 py-4 rounded-full border border-slate-100 bg-[#F8F8FF] focus:outline-none focus:ring-2 focus:ring-[#0D4CFF]/20 text-sm">
+    <textarea name="message" rows="4" placeholder="What website do you need?" class="w-full px-5 py-4 rounded-[1.5rem] border border-slate-100 bg-[#F8F8FF] focus:outline-none focus:ring-2 focus:ring-[#0D4CFF]/20 text-sm"></textarea>
+    <button class="w-full bg-[#0A0A5C] hover:bg-black text-white py-4 rounded-full font-bold text-sm transition shadow-lg">Send Request to WiseWeb — Free Mockup</button>
+    <p class="text-[11px] text-center text-slate-400">🔒 Your info is safe. No spam. I reply from sthepoisn@gmail.com</p>
+  </form>
+</div>
+</section>
+
+<footer class="py-10 text-center text-[11px] tracking-widest font-bold text-slate-400">© 2026 WISEWEB • INANDA • PHOENIX • DURBAN • sthepoisn@gmail.com • 0671271038</footer>
+
+</body>
+  </html>
