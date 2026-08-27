@@ -3,64 +3,69 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>PoisnWeb — R20k Websites | Wiseman Mdletshe</title>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-<script src="https://cdn.tailwindcss.com"></script>
-<style>
-  body{font-family:Inter,sans-serif;background:#FFFEFB}
- .display{font-family:'Plus Jakarta Sans',sans-serif}
-</style>
-</head>
-<body class="bg-[#FFFEFB] text-[#121212] antialiased">
+<title>PoisnWeb — Websites That Work Wiser | Wiseman Mdletshe</title>
 
-<!-- NAV - clean white -->
-<nav class="fixed top-0 w-full z-50 bg-[#FFFEFB]/80 backdrop-blur-xl border-b border-black/[0.06]">
+<style>
+/* PLAY WITH THESE 3 COLORS ONLY - R20k palettes below */
+:root{
+  --bg: #FBFBFF; /* background */
+  --ink: #0A0A5C; /* text / dark */
+  --pop: #0D4CFF; /* your main pop color */
+}
+
+/* --- R20k COLOR OPTIONS - copy one and paste above ---
+
+Option 1 - ROYAL (your original but richer):
+--bg: #F6F7FF; --ink: #0A0A5C; --pop: #2B44FF;
+
+Option 2 - FOREST LUXURY (expensive agency feel):
+--bg: #F7FBF8; --ink: #0A1F1A; --pop: #00B870;
+
+Option 3 - BURNT ORANGE (high converting, premium):
+--bg: #FFFBF7; --ink: #1A0F0A; --pop: #FF4D00;
+
+Option 4 - MIDNIGHT GOLD (R20k+ luxury):
+--bg: #FBFBFF; --ink: #101010; --pop: #4F46E5;
+
+*/
+body{font-family:Inter,sans-serif;background:var(--bg);color:var(--ink)}
+h1,h2,h3,.display{font-family:'Plus Jakarta Sans',sans-serif}
+</style>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="antialiased">
+<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
 <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
 <div class="flex items-center gap-3">
-<img src="wiseman.jpg" class="w-8 h-8 rounded-full object-cover">
-<div class="font-extrabold text-[20px] display tracking-tight">PoisnWeb</div>
-<div class="hidden md:flex ml-4 bg-[#121212] text-white px-3 py-1 rounded-full text-[10px] font-bold tracking-widest">FOUNDER: WISEMAN MDLETSHE</div>
+<img src="wiseman.jpg" class="w-8 h-8 rounded-full object-cover border">
+<div class="font-extrabold text-[19px] display">Poisn<span style="color:var(--pop)">Web</span></div>
 </div>
-<a href="#quote" class="bg-[#2B44FF] text-white px-6 py-2.5 rounded-full text-[13px] font-bold hover:bg-black transition">Get Free Mockup</a>
+<a href="#quote" class="text-white px-6 py-2.5 rounded-full text-[13px] font-bold" style="background:var(--ink)">Get Free Quote →</a>
 </div>
 </nav>
 
-<!-- HERO - light & premium -->
-<section class="pt-36 pb-20 px-6">
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-14 items-center">
+<section class="pt-32 pb-16 px-6">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
 <div>
-<div class="inline-flex bg-[#F2F0EB] border border-black/5 px-4 py-2 rounded-full text-[11px] font-bold tracking-widest">12+ KZN BUSINESSES • INANDA • PHOENIX • DURBAN</div>
-<h1 class="display text-[62px] leading-[0.9] font-[800] mt-6 tracking-tight">
-Websites built like<br>
-<span class="text-[#2B44FF]">R20,000</span> builds.
-</h1>
-<p class="mt-5 text-[18px] leading-[1.5] text-[#6B6B7B] max-w-[44ch]">Clean. Fast. Google-ready. I build premium websites myself — no templates, no agency markup. Same quality others charge R20k for.</p>
-
-<div class="mt-8 flex flex-wrap gap-3">
-<a href="https://wa.me/27671271038" class="bg-[#121212] text-white px-8 py-4 rounded-full font-bold text-[14px]">WhatsApp 067 127 1038</a>
-<a href="#quote" class="bg-white border border-black/10 px-8 py-4 rounded-full font-bold text-[14px]">View Pricing</a>
+<div class="inline-flex items-center gap-2 bg-white border px-3 py-1.5 rounded-full text-[11px] font-bold tracking-widest text-slate-600"><span class="w-2 h-2 rounded-full animate-pulse" style="background:var(--pop)"></span> FOUNDER: WISEMAN STHEMBISO MDLETSHE</div>
+<h1 class="display text-[52px] leading-[0.95] font-extrabold mt-6 tracking-tight">Be Smart.<br><span style="color:var(--pop)">Grow Business.</span><br>With Us.</h1>
+<p class="mt-5 text-[18px] text-slate-500 max-w-[48ch]">I craft fast websites that turn clicks into customers. Owned & built by me — Wiseman — for businesses in Inanda, Phoenix & Durban.</p>
+<div class="mt-7 flex gap-3">
+<a href="https://wa.me/27671271038?text=Hi%20Wiseman%20at%20WiseWeb,%20I%20need%20a%20website" class="text-white px-7 py-4 rounded-full font-bold text-sm" style="background:var(--ink)">WhatsApp 067 127 1038</a>
+<a href="mailto:sthepoisn@gmail.com" class="bg-white border border-slate-200 px-7 py-4 rounded-full font-bold text-sm">Email Me</a>
 </div>
-
-<div class="mt-10 flex items-center gap-4">
-<div class="flex -space-x-2">
-<img src="wiseman.jpg" class="w-9 h-9 rounded-full border-2 border-white">
-<div class="w-9 h-9 rounded-full bg-[#2B44FF] grid place-items-center text-white text-[11px] font-bold border-2 border-white">✓</div>
-</div>
-<div class="text-[13px] leading-[1.2]"><b class="text-[#121212]">Wiseman Sthembiso Mdletshe</b><br><span class="text-[#6B6B7B]">Owner, replies in 20 mins • sthepoisn@gmail.com</span></div>
+<div class="mt-8 flex items-center gap-3">
+<img src="wiseman.jpg" class="w-10 h-10 rounded-full object-cover border-2 border-white shadow">
+<div class="text-[13px] text-slate-500"><b style="color:var(--ink)">Wiseman Sthembiso Mdletshe</b><br>Founder, PoisnWeb — 12+ KZN businesses</div>
 </div>
 </div>
-
 <div class="relative">
-<div class="absolute -top-6 -right-6 w-full h-full bg-[#F2F0EB] rounded-[2.5rem] -rotate-2"></div>
-<img src="Fade.jpg" class="relative rounded-[2.5rem] w-full object-cover aspect-[4/3] shadow-[0_20px_60px_-20px_rgba(0,0,0,0.2)]">
-<div class="absolute bottom-6 left-6 right-6 bg-[#121212] text-white rounded-2xl p-4 flex justify-between items-center">
-<div><p class="text-[10px] tracking-widest opacity-60 font-bold">LIVE RESULT</p><p class="font-bold text-[14px]">The Fade Factory — 98/100 Speed</p></div>
-<div class="bg-[#2B44FF] w-10 h-10 rounded-full grid place-items-center">↗</div>
+<img src="Fade.jpg" class="rounded-[2rem] w-full object-cover aspect-[4/3] shadow-[0_30px_80px_-20px_rgba(10,10,92,0.3)]">
+<div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur rounded-2xl p-4 flex justify-between items-center shadow-xl"><div><p class="text-[10px] font-bold tracking-widest text-slate-400">LIVE PROJECT</p><p class="font-bold text-sm">The Fade Factory — 98/100 Speed</p></div><div class="w-10 h-10 text-white rounded-full grid place-items-center" style="background:var(--ink)">↗</div></div>
 </div>
-</div>
-
 </div>
 </section>
-
 </body>
 </html>
