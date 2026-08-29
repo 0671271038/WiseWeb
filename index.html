@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>PoisnWeb — Websites That Work Wiser | Wiseman Mdletshe | Web Designer Inanda Phoenix Durban</title>
 <meta name="description" content="WiseWeb by Wiseman Sthembiso Mdletshe — I build fast, premium websites for KZN businesses. Inanda, Phoenix, Durban. WhatsApp 0671271038. Free mockup." />
 <meta name="author" content="Wiseman Sthembiso Mdletshe" />
@@ -16,119 +16,104 @@
 </script>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
-<style>body{font-family:Inter,sans-serif}h1,h2,h3,.display{font-family:'Plus Jakarta Sans',sans-serif}</style>
+<style>
+:root{ --sat: env(safe-area-inset-top); --sab: env(safe-area-inset-bottom); }
+html{ background:#FBFBFF; }
+body{font-family:Inter,sans-serif; padding-top:var(--sat); padding-bottom:calc(90px + var(--sab));}
+h1,h2,h3,.display{font-family:'Plus Jakarta Sans',sans-serif}
+nav.fixed{ top:var(--sat)!important; }
+</style>
 </head>
 <body class="bg-[#FBFBFF] text-[#0A0A5C] antialiased">
-<nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl border-b border-slate-100">
-<div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-<div class="flex items-center gap-3">
+<nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-xl border-b border-slate-100">
+<div class="max-w-6xl mx-auto px-4 md:px-6 py-3 flex justify-between items-center">
+<div class="flex items-center gap-2.5">
 <img src="wiseman.jpg" class="w-8 h-8 rounded-full object-cover border">
-<div class="font-extrabold text-[19px] display">Poisn<span class="text-[#0D4CFF]">Web</span></div>
+<div class="font-extrabold text-[18px] display">Poisn<span class="text-[#0D4CFF]">Web</span></div>
 </div>
-<a href="#quote" class="bg-[#0A0A5C] text-white px-6 py-2.5 rounded-full text-[13px] font-bold">Get Free Quote →</a>
+<a href="#quote" class="bg-[#0A0A5C] text-white px-4 md:px-6 py-2.5 rounded-full text-[11px] md:text-[13px] font-bold">Get Free Quote →</a>
 </div>
 </nav>
 
-<section class="pt-32 pb-16 px-6">
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+<section class="pt-28 md:pt-32 pb-12 px-5 md:px-6">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8 items-center">
 <div>
-<div class="inline-flex items-center gap-2 bg-white border px-3 py-1.5 rounded-full text-[11px] font-bold tracking-widest text-slate-600"><span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> FOUNDER: WISEMAN STHEMBISO MDLETSHE</div>
-<h1 class="display text-[52px] leading-[0.95] font-extrabold mt-6 tracking-tight">Be Smart.<br><span class="text-[#0D4CFF]">Grow Business.</span><br>With Us.</h1>
-<p class="mt-5 text-[18px] text-slate-500 max-w-[48ch]">I craft fast websites that turn clicks into customers. Owned & built by me — Wiseman — for businesses in Inanda, Phoenix & Durban.</p>
-<div class="mt-7 flex gap-3">
-<a href="https://wa.me/27671271038?text=Hi%20Wiseman%20at%20WiseWeb,%20I%20need%20a%20website" class="bg-[#0A0A5C] text-white px-7 py-4 rounded-full font-bold text-sm">WhatsApp 067 127 1038</a>
-<a href="mailto:sthepoisn@gmail.com" class="bg-white border border-slate-200 px-7 py-4 rounded-full font-bold text-sm">Email Me</a>
+<div class="inline-flex items-center gap-2 bg-white border px-3 py-1.5 rounded-full text-[10px] font-bold tracking-widest text-slate-600"><span class="w-2 h-2 bg-emerald-500 rounded-full animate-pulse"></span> FOUNDER: WISEMAN STHEMBISO MDLETSHE</div>
+<h1 class="display text-[36px] md:text-[52px] leading-[0.95] font-extrabold mt-5 tracking-tight">Be Smart.<br><span class="text-[#0D4CFF]">Grow Business.</span><br>With Us.</h1>
+<p class="mt-4 text-[16px] md:text-[18px] text-slate-500 leading-relaxed">I craft fast websites that turn clicks into customers. Owned & built by me — Wiseman — for businesses in Inanda, Phoenix & Durban.</p>
+<div class="mt-6 flex flex-wrap gap-3">
+<a href="https://wa.me/27671271038?text=Hi%20Wiseman%20at%20WiseWeb,%20I%20need%20a%20website" class="bg-[#0A0A5C] text-white px-6 py-3.5 rounded-full font-bold text-[13px]">WhatsApp 067 127 1038</a>
+<a href="mailto:sthepoisn@gmail.com" class="bg-white border border-slate-200 px-6 py-3.5 rounded-full font-bold text-[13px]">Email Me</a>
 </div>
-<div class="mt-8 flex items-center gap-3">
-<img src="wiseman.jpg" class="w-10 h-10 rounded-full object-cover border-2 border-white shadow">
-<div class="text-[13px] text-slate-500"><b class="text-[#0A0A5C]">Wiseman Sthembiso Mdletshe</b><br>Founder, PoisnWeb — 12+ KZN businesses</div>
+<div class="mt-6 flex items-center gap-3">
+<img src="wiseman.jpg" class="w-9 h-9 rounded-full object-cover border-2 border-white shadow">
+<div class="text-[12px] text-slate-500 leading-tight"><b class="text-[#0A0A5C]">Wiseman Sthembiso Mdletshe</b><br>Founder, PoisnWeb — 12+ KZN businesses</div>
 </div>
 </div>
-<div class="relative">
-<img src="Fade.jpg" class="rounded-[2rem] w-full object-cover aspect-[4/3] shadow-[0_30px_80px_-20px_rgba(10,10,92,0.3)]">
-<div class="absolute bottom-5 left-5 right-5 bg-white/95 backdrop-blur rounded-2xl p-4 flex justify-between items-center shadow-xl"><div><p class="text-[10px] font-bold tracking-widest text-slate-400">LIVE PROJECT</p><p class="font-bold text-sm">The Fade Factory — 98/100 Speed</p></div><div class="w-10 h-10 bg-[#0A0A5C] text-white rounded-full grid place-items-center">↗</div></div>
+<div class="relative mt-2">
+<img src="Fade.jpg" class="rounded-[1.8rem] w-full object-cover aspect-[4/3] shadow-[0_30px_80px_-20px_rgba(10,10,92,0.3)]">
+<div class="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur rounded-2xl p-3.5 flex justify-between items-center shadow-xl"><div><p class="text-[9px] font-bold tracking-widest text-slate-400">LIVE PROJECT</p><p class="font-bold text-[12px]">The Fade Factory — 98/100 Speed</p></div><div class="w-9 h-9 bg-[#0A0A5C] text-white rounded-full grid place-items-center text-[12px]">↗</div></div>
 </div>
 </div>
 </section>
 
-<section class="py-16 px-6 bg-white border-y border-slate-100">
-<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 items-center">
-<img src="wiseman.jpg" alt="Wiseman Sthembiso Mdletshe" class="w-28 h-28 rounded-[1.5rem] object-cover shadow-xl">
+<section class="py-12 px-5 md:px-6 bg-white border-y border-slate-100">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row gap-6 items-center">
+<img src="wiseman.jpg" alt="Wiseman Sthembiso Mdletshe" class="w-20 h-20 rounded-[1.2rem] object-cover shadow-xl">
 <div>
-<h3 class="display font-extrabold text-2xl">Hey, I'm Wiseman — I build PoisnWeb myself</h3>
-<p class="text-slate-500 mt-2 max-w-[60ch] text-[15px]">No agency, no middleman. You chat directly with me, the owner. Based in Inanda, serving Phoenix, Verulam & Durban. I give free homepage mockups, no upfront payment. If you don't love it, you don't pay.</p>
-<p class="mt-3 text-sm font-bold">📍 Inanda KZN • 📱 0671271038 • 📧 sthepoisn@gmail.com</p>
+<h3 class="display font-extrabold text-[18px] md:text-2xl">Hey, I'm Wiseman — I build PoisnWeb myself</h3>
+<p class="text-slate-500 mt-2 text-[13px] md:text-[15px] leading-relaxed">No agency, no middleman. You chat directly with me, the owner. Based in Inanda, serving Phoenix, Verulam & Durban. I give free homepage mockups, no upfront payment.</p>
+<p class="mt-3 text-[11px] font-bold">📍 Inanda KZN • 📱 0671271038 • 📧 sthepoisn@gmail.com</p>
 </div>
 </div>
 </section>
 
-<section id="quote" class="py-20 px-6 bg-[#F6F7FF]">
-<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10">
+<section id="quote" class="py-16 px-5 md:px-6 bg-[#F6F7FF]">
+<div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
 <div>
-<h2 class="display text-[38px] leading-[0.95] font-extrabold">Get your free quote.<br><span class="text-slate-400">I reply in 30 mins.</span></h2>
-<div class="mt-6 bg-white p-6 rounded-[1.5rem] border shadow-sm flex gap-4">
-<img src="wiseman.jpg" class="w-14 h-14 rounded-full object-cover">
-<div><p class="font-bold">Wiseman Mdletshe</p><p class="text-sm text-slate-500">Owner, PoisnWeb • Usually replies in 20 mins</p><a href="https://wa.me/27671271038" class="mt-3 inline-block bg-[#25D366] text-white px-5 py-2 rounded-full text-sm font-bold">Chat on WhatsApp</a></div>
+<h2 class="display text-[30px] md:text-[38px] leading-[0.95] font-extrabold">Get your free quote.<br><span class="text-slate-400">I reply in 30 mins.</span></h2>
+<div class="mt-6 bg-white p-5 rounded-[1.5rem] border shadow-sm flex gap-4">
+<img src="wiseman.jpg" class="w-12 h-12 rounded-full object-cover">
+<div><p class="font-bold text-[14px]">Wiseman Mdletshe</p><p class="text-[12px] text-slate-500">Owner, PoisnWeb • Usually replies in 20 mins</p><a href="https://wa.me/27671271038" class="mt-2 inline-block bg-[#25D366] text-white px-4 py-2 rounded-full text-[11px] font-bold">Chat on WhatsApp</a></div>
 </div>
 </div>
-<form action="https://formsubmit.co/sthepoisn@gmail.com" method="POST" class="bg-white p-7 rounded-[2rem] border shadow-xl space-y-3">
+<form action="https://formsubmit.co/sthepoisn@gmail.com" method="POST" class="bg-white p-6 rounded-[1.8rem] border shadow-xl space-y-3">
 <input type="hidden" name="_subject" value="NEW WiseWeb Lead - Google Indexed!"><input type="hidden" name="_captcha" value="false">
-<input name="name" required placeholder="Your Name" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-sm">
-<input name="whatsapp" required placeholder="WhatsApp Number" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-sm">
-<input name="business" placeholder="Business Name" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-sm">
-<textarea name="message" rows="3" placeholder="What website do you need?" class="w-full px-5 py-4 rounded-[1.5rem] border bg-[#F8F8FF] text-sm"></textarea>
-<button class="w-full bg-[#0A0A5C] text-white py-4 rounded-full font-bold text-sm">Send Request to Wiseman — Free Mockup</button>
+<input name="name" required placeholder="Your Name" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-[13px]">
+<input name="whatsapp" required placeholder="WhatsApp Number" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-[13px]">
+<input name="business" placeholder="Business Name" class="w-full px-5 py-4 rounded-full border bg-[#F8F8FF] text-[13px]">
+<textarea name="message" rows="3" placeholder="What website do you need?" class="w-full px-5 py-4 rounded-[1.5rem] border bg-[#F8F8FF] text-[13px]"></textarea>
+<button class="w-full bg-[#0A0A5C] text-white py-4 rounded-full font-bold text-[13px]">Send Request to Wiseman — Free Mockup</button>
 </form>
 </div>
 </section>
 
-<footer class="py-12 px-6 bg-white border-t border-slate-100">
+<footer class="py-10 px-6 bg-white border-t border-slate-100">
 <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
 <div>
-<p class="font-extrabold display text-[15px]">Poisn<span class="text-[#0D4CFF]">Web</span></p>
-<p class="text-[12px] text-slate-500 mt-1 max-w-[32ch]">Premium fast websites for KZN businesses. Built by Wiseman Mdletshe in Inanda, Phoenix, Durban.</p>
-<p class="mt-3 text-[11px] tracking-widest font-bold text-slate-400">© 2026 POISNWEB • WISEMAN MDLETSHE • 0671271038</p>
+<p class="font-extrabold display text-[14px]">Poisn<span class="text-[#0D4CFF]">Web</span></p>
+<p class="text-[11px] text-slate-500 mt-1 max-w-[32ch]">Premium fast websites for KZN businesses. Built by Wiseman Mdletshe.</p>
+<p class="mt-3 text-[10px] tracking-widest font-bold text-slate-400">© 2026 POISNWEB • 0671271038</p>
 </div>
-<div class="flex gap-6 text-[12px] font-bold">
-<a href="#" onclick="openModal('terms');return false;" class="text-[#0A0A5C] underline">Terms</a>
-<a href="#" onclick="openModal('privacy');return false;" class="text-[#0A0A5C] underline">Privacy & Cookies</a>
-<a href="#" onclick="openModal('cookies');return false;" class="text-[#0D4CFF] underline">Manage Cookies</a>
+<div class="flex gap-5 text-[11px] font-bold">
+<a href="#" onclick="openM('terms');return false;" class="underline">Terms</a>
+<a href="#" onclick="openM('privacy');return false;" class="underline">Privacy</a>
+<a href="#" onclick="openM('cookies');return false;" class="text-[#0D4CFF] underline">Manage Cookies</a>
 </div>
 </div>
 </footer>
 
-<!-- COOKIE BANNER -->
-<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[99] bg-[#0A0A5C] text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px]" style="padding-bottom:calc(12px + var(--sab));display:none">
-<div>We use cookies for speed & analytics. By using PoisnWeb you agree. <a href="#" onclick="openModal('privacy');return false;" class="underline">Learn more</a></div>
-<div class="flex gap-2"><button onclick="acceptCookies()" class="bg-white text-[#0A0A5C] px-5 py-2 rounded-full font-bold">Accept</button><button onclick="declineCookies()" class="border border-white/30 px-5 py-2 rounded-full">Decline</button></div>
+<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[99] bg-[#0A0A5C] text-white px-5 py-4 flex flex-col md:flex-row justify-between items-center gap-3 text-[11px]" style="padding-bottom:calc(12px + var(--sab));display:none">
+<div>We use cookies for speed & analytics. <a href="#" onclick="openM('privacy');return false;" class="underline">Learn more</a></div>
+<div class="flex gap-2"><button onclick="acceptC()" class="bg-white text-[#0A0A5C] px-5 py-2 rounded-full font-bold">Accept</button><button onclick="declineC()" class="border border-white/30 px-5 py-2 rounded-full">Decline</button></div>
 </div>
-
-<!-- MODALS -->
-<div id="modal" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur hidden p-6 overflow-y-auto">
-<div class="max-w-2xl mx-auto bg-white rounded-[1.5rem] p-8 my-10 relative">
-<button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 bg-slate-100 rounded-full">✕</button>
-<div id="modalContent"></div>
-</div>
-</div>
-
+<div id="modal" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur hidden p-5 overflow-y-auto"><div class="max-w-2xl mx-auto bg-white rounded-[1.5rem] p-7 my-10 relative"><button onclick="closeM()" class="absolute top-4 right-4 w-8 h-8 bg-slate-100 rounded-full">✕</button><div id="modalContent"></div></div></div>
 <script>
-function openModal(type){
- const m=document.getElementById('modal');
- const c=document.getElementById('modalContent');
- if(type==='terms'){
-  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Terms of Service</h2><p class='text-sm text-slate-500 mt-4'>Last updated 2026</p><div class='mt-6 space-y-3 text-[13px] text-slate-600 leading-relaxed'><p><b>1. Owner:</b> PoisnWeb is owned by Wiseman Sthembiso Mdletshe, Inanda KZN, 0671271038, sthepoisn@gmail.com</p><p><b>2. Free Mockup:</b> I offer free homepage mockup, no upfront payment. Full site starts after approval.</p><p><b>3. No spam:</b> Your WhatsApp/email used only to reply to your request.</p><p><b>4. Pricing:</b> Quotes valid 7 days. Domain/hosting extra unless included.</p><p><b>5. Contact:</b> For any issue WhatsApp 0671271038.</p></div>`;
- }else if(type==='privacy'){
-  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Privacy & Cookies Policy</h2><div class='mt-6 space-y-3 text-[13px] text-slate-600 leading-relaxed'><p>PoisnWeb (Wiseman Mdletshe) respects your privacy. We collect only name, WhatsApp, business name you submit via form to contact you.</p><p><b>Cookies:</b> We use essential cookies for site speed and optional analytics (Google). No selling of data.</p><p><b>Storage:</b> Form data sent to sthepoisn@gmail.com via FormSubmit. Not stored on site.</p><p><b>Your rights:</b> You can request deletion via sthepoisn@gmail.com or 0671271038.</p><p><b>Manage:</b> Use Manage Cookies to accept/decline analytics cookies.</p></div>`;
- }else{
-  let consent=localStorage.getItem('pw_cookie')||'not set';
-  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Manage Cookies</h2><p class='text-[13px] text-slate-500 mt-2'>Current: <b>${consent}</b></p><div class='mt-6 space-y-4'><div class='flex justify-between items-center bg-slate-50 p-4 rounded-xl'><div><p class='font-bold text-sm'>Essential</p><p class='text-[11px] text-slate-500'>Needed for site to work</p></div><span class='text-[11px] font-bold'>Always ON</span></div><div class='flex justify-between items-center bg-slate-50 p-4 rounded-xl'><div><p class='font-bold text-sm'>Analytics</p><p class='text-[11px] text-slate-500'>Helps us improve</p></div><div class='flex gap-2'><button onclick='acceptCookies();closeModal()' class='bg-[#0A0A5C] text-white px-4 py-1.5 rounded-full text-[11px]'>ON</button><button onclick='declineCookies();closeModal()' class='bg-white border px-4 py-1.5 rounded-full text-[11px]'>OFF</button></div></div></div>`;
- }
- m.classList.remove('hidden');
-}
-function closeModal(){ document.getElementById('modal').classList.add('hidden'); }
-function acceptCookies(){ localStorage.setItem('pw_cookie','accepted'); document.getElementById('cookieBanner').style.display='none'; }
-function declineCookies(){ localStorage.setItem('pw_cookie','declined'); document.getElementById('cookieBanner').style.display='none'; }
-window.onload=()=>{ if(!localStorage.getItem('pw_cookie')) document.getElementById('cookieBanner').style.display='flex'; };
-    </script>
+function openM(t){const m=document.getElementById('modal'),c=document.getElementById('modalContent');if(t==='terms'){c.innerHTML=`<h2 class='display text-xl font-extrabold'>Terms</h2><div class='mt-4 space-y-2 text-[12px] text-slate-600 leading-relaxed'><p><b>Owner:</b> Wiseman Mdletshe, Inanda, 0671271038, sthepoisn@gmail.com</p><p><b>Free Mockup:</b> No upfront. Full site after approval.</p><p><b>Pricing:</b> Valid 7 days.</p></div>`}else if(t==='privacy'){c.innerHTML=`<h2 class='display text-xl font-extrabold'>Privacy & Cookies</h2><div class='mt-4 space-y-2 text-[12px] text-slate-600 leading-relaxed'><p>We collect only name, WhatsApp, business you submit to contact you. Data sent to sthepoisn@gmail.com via FormSubmit.</p><p><b>Cookies:</b> Essential + Analytics. No selling data.</p><p>Request deletion: sthepoisn@gmail.com</p></div>`}else{let s=localStorage.getItem('pw_cookie')||'not set';c.innerHTML=`<h2 class='display text-xl font-extrabold'>Manage Cookies</h2><p class='text-[11px] text-slate-500 mt-2'>Current: <b>${s}</b></p><div class='mt-4 space-y-3'><div class='flex justify-between items-center bg-slate-50 p-3 rounded-xl'><div><p class='font-bold text-[12px]'>Essential</p><p class='text-[10px] text-slate-500'>Always ON</p></div><span class='text-[10px] font-bold'>ON</span></div><div class='flex justify-between items-center bg-slate-50 p-3 rounded-xl'><div><p class='font-bold text-[12px]'>Analytics</p></div><div class='flex gap-2'><button onclick='acceptC();closeM()' class='bg-[#0A0A5C] text-white px-3 py-1.5 rounded-full text-[10px]'>ON</button><button onclick='declineC();closeM()' class='bg-white border px-3 py-1.5 rounded-full text-[10px]'>OFF</button></div></div></div>`}m.classList.remove('hidden')}
+function closeM(){document.getElementById('modal').classList.add('hidden')}
+function acceptC(){localStorage.setItem('pw_cookie','accepted');document.getElementById('cookieBanner').style.display='none'}
+function declineC(){localStorage.setItem('pw_cookie','declined');document.getElementById('cookieBanner').style.display='none'}
+window.onload=()=>{if(!localStorage.getItem('pw_cookie'))document.getElementById('cookieBanner').style.display='flex'}
+</script>
 </body>
 </html>
