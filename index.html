@@ -82,8 +82,53 @@
 </div>
 </section>
 
-<footer class="py-8 text-center text-[11px] tracking-widest font-bold text-slate-400">© 2026 POISNWEB • OWNED BY WISEMAN MDLETSHE • sthepoisn@gmail.com • 0671271038</footer>
+<footer class="py-12 px-6 bg-white border-t border-slate-100">
+<div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between gap-6">
+<div>
+<p class="font-extrabold display text-[15px]">Poisn<span class="text-[#0D4CFF]">Web</span></p>
+<p class="text-[12px] text-slate-500 mt-1 max-w-[32ch]">Premium fast websites for KZN businesses. Built by Wiseman Mdletshe in Inanda, Phoenix, Durban.</p>
+<p class="mt-3 text-[11px] tracking-widest font-bold text-slate-400">© 2026 POISNWEB • WISEMAN MDLETSHE • 0671271038</p>
+</div>
+<div class="flex gap-6 text-[12px] font-bold">
+<a href="#" onclick="openModal('terms');return false;" class="text-[#0A0A5C] underline">Terms</a>
+<a href="#" onclick="openModal('privacy');return false;" class="text-[#0A0A5C] underline">Privacy & Cookies</a>
+<a href="#" onclick="openModal('cookies');return false;" class="text-[#0D4CFF] underline">Manage Cookies</a>
+</div>
+</div>
+</footer>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner" class="fixed bottom-0 left-0 right-0 z-[99] bg-[#0A0A5C] text-white px-6 py-4 flex flex-col md:flex-row justify-between items-center gap-3 text-[12px]" style="padding-bottom:calc(12px + var(--sab));display:none">
+<div>We use cookies for speed & analytics. By using PoisnWeb you agree. <a href="#" onclick="openModal('privacy');return false;" class="underline">Learn more</a></div>
+<div class="flex gap-2"><button onclick="acceptCookies()" class="bg-white text-[#0A0A5C] px-5 py-2 rounded-full font-bold">Accept</button><button onclick="declineCookies()" class="border border-white/30 px-5 py-2 rounded-full">Decline</button></div>
+</div>
+
+<!-- MODALS -->
+<div id="modal" class="fixed inset-0 z-[100] bg-black/60 backdrop-blur hidden p-6 overflow-y-auto">
+<div class="max-w-2xl mx-auto bg-white rounded-[1.5rem] p-8 my-10 relative">
+<button onclick="closeModal()" class="absolute top-4 right-4 w-8 h-8 bg-slate-100 rounded-full">✕</button>
+<div id="modalContent"></div>
+</div>
+</div>
+
+<script>
+function openModal(type){
+ const m=document.getElementById('modal');
+ const c=document.getElementById('modalContent');
+ if(type==='terms'){
+  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Terms of Service</h2><p class='text-sm text-slate-500 mt-4'>Last updated 2026</p><div class='mt-6 space-y-3 text-[13px] text-slate-600 leading-relaxed'><p><b>1. Owner:</b> PoisnWeb is owned by Wiseman Sthembiso Mdletshe, Inanda KZN, 0671271038, sthepoisn@gmail.com</p><p><b>2. Free Mockup:</b> I offer free homepage mockup, no upfront payment. Full site starts after approval.</p><p><b>3. No spam:</b> Your WhatsApp/email used only to reply to your request.</p><p><b>4. Pricing:</b> Quotes valid 7 days. Domain/hosting extra unless included.</p><p><b>5. Contact:</b> For any issue WhatsApp 0671271038.</p></div>`;
+ }else if(type==='privacy'){
+  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Privacy & Cookies Policy</h2><div class='mt-6 space-y-3 text-[13px] text-slate-600 leading-relaxed'><p>PoisnWeb (Wiseman Mdletshe) respects your privacy. We collect only name, WhatsApp, business name you submit via form to contact you.</p><p><b>Cookies:</b> We use essential cookies for site speed and optional analytics (Google). No selling of data.</p><p><b>Storage:</b> Form data sent to sthepoisn@gmail.com via FormSubmit. Not stored on site.</p><p><b>Your rights:</b> You can request deletion via sthepoisn@gmail.com or 0671271038.</p><p><b>Manage:</b> Use Manage Cookies to accept/decline analytics cookies.</p></div>`;
+ }else{
+  let consent=localStorage.getItem('pw_cookie')||'not set';
+  c.innerHTML=`<h2 class='display text-2xl font-extrabold'>Manage Cookies</h2><p class='text-[13px] text-slate-500 mt-2'>Current: <b>${consent}</b></p><div class='mt-6 space-y-4'><div class='flex justify-between items-center bg-slate-50 p-4 rounded-xl'><div><p class='font-bold text-sm'>Essential</p><p class='text-[11px] text-slate-500'>Needed for site to work</p></div><span class='text-[11px] font-bold'>Always ON</span></div><div class='flex justify-between items-center bg-slate-50 p-4 rounded-xl'><div><p class='font-bold text-sm'>Analytics</p><p class='text-[11px] text-slate-500'>Helps us improve</p></div><div class='flex gap-2'><button onclick='acceptCookies();closeModal()' class='bg-[#0A0A5C] text-white px-4 py-1.5 rounded-full text-[11px]'>ON</button><button onclick='declineCookies();closeModal()' class='bg-white border px-4 py-1.5 rounded-full text-[11px]'>OFF</button></div></div></div>`;
+ }
+ m.classList.remove('hidden');
+}
+function closeModal(){ document.getElementById('modal').classList.add('hidden'); }
+function acceptCookies(){ localStorage.setItem('pw_cookie','accepted'); document.getElementById('cookieBanner').style.display='none'; }
+function declineCookies(){ localStorage.setItem('pw_cookie','declined'); document.getElementById('cookieBanner').style.display='none'; }
+window.onload=()=>{ if(!localStorage.getItem('pw_cookie')) document.getElementById('cookieBanner').style.display='flex'; };
+    </script>
 </body>
 </html>
-
-Just give me nice colors please make cost R20k website
